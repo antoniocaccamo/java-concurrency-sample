@@ -1,0 +1,5 @@
+profile: cli
+defaultPackage: java.concurrency.sample.mvn
+---
+testFramework: junit
+sourceLanguage: java

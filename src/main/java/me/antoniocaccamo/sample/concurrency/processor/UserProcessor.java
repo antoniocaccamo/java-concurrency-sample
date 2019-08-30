@@ -1,13 +1,13 @@
 package me.antoniocaccamo.sample.concurrency.processor;
 
+import java.util.concurrent.Callable;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import io.micronaut.context.annotation.Prototype;
 import lombok.extern.slf4j.Slf4j;
 import me.antoniocaccamo.sample.concurrency.model.User;
 import me.antoniocaccamo.sample.concurrency.repo.UserRepository;
-
-import java.util.concurrent.Callable;
 
 @Prototype @Slf4j
 public class UserProcessor implements Callable<String> {
